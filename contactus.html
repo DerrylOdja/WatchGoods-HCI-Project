@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatcHGoods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <nav> 
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">
+            <div id="spec">WatcH</div>Goods
+        </label>
+        <ul>      
+            <li><a href="public.html">Home</a></li> 
+            <li><a href="product.html">Product</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="headerpic"><img src="contacus-headerpic.png" alt=""></div>
+        <div class="title"> <span id="specs">CONTACT</span>US</div>
+        <div class="line"></div>
+        <form id="form-contactus" method="post">
+
+            <div class="form-field">
+                <label for="fullname"></label>
+                <input placeholder="Full Name*" type="text" id="fullname" name="fullname">
+            </div>
+
+            <div class="form-field">
+                <label for="email"></label>
+                <input placeholder="Email*" type="text" id="email" name="email">
+            </div>
+
+            <div class="form-field">
+                <label for="region"></label>
+                <input placeholder="Region*" type="text" id="region" name="region">
+            </div>
+
+            <div class="form-field">
+                <label for="message"></label>
+                <textarea placeholder="Message*" type="text" id="message" name="message"></textarea>
+            </div>
+
+            <div class="form-field" id="iagree-container">
+                <label for="iagree">I agree to receive a copy of my message via email and understand 
+                    my personal information will be handled according to WatcHGoods' privacy policy</label>
+                <input type="checkbox" id="iagree" name="iagree">
+                
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </from>
+        <script src="contactus.js"></script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer  -->
+    <div class="footer">
+        <footer>
+            <div class="left">
+                <div class="head-left">
+                    <img src="contactus-footer-callpic.png" alt="">
+                    <div class="desc">
+                        Call Us
+                    </div>
+                </div>
+                <div class="desc-left">
+                    <i> Client Relations Center Hours (in EST)</i> <br>
+                    Weekdays - 9 a.m. to 9 p.m. <br>
+                    Saturday - 10 a.m. to 9 p.m. <br>
+                    Sunday - 10 a.m. to 8 p.m. <br> <br>
+                    Tel: 1.800.227.8437
+                </div>
+                
+            </div>
+
+            <div class="line-2">
+
+            </div>
+
+            <div class="right">
+                <div class="foll">
+                    Follow Us
+                </div>
+                <div class="logos"> 
+                    <a onclick="openNewWindow('https://www.instagram.com')"><img src="footer-ig-logo(2).png" alt=""></a>
+                    <a onclick="openNewWindow('https://www.facebook.com')"><img src="footer-fb-logo.png" alt=""></a>
+                    <a onclick="openNewWindow('https://www.snapchat.com')"><img src="footer-sc-logo.png" alt=""></a>
+                    <a onclick="openNewWindow('https://twitter.com/login')"><img src="footer-twitter-logo.png" alt=""></a>
+                    <a onclick="openNewWindow('https://www.linkedin.com')"><img src="footer-linkedin-logo.png" alt=""></a>
+                </div>
+                
+            </div>
+
+        </footer>
+        <div class="cr">Copyright © 2023 WatcHGoods. All Rights Reserved</div> 
+    </div>
+</body>
+</html>

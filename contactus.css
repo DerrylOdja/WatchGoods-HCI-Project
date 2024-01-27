@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Inter', sans-serif;
+}
+
+body{
+    height: auto;
+}
+
+nav{
+    background:#FDFFE5;
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: fixed;
+    margin-top: -80px;
+}
+
+label.logo{
+    font-size: 30px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px #afb139;
+    position: absolute;
+    display: flex;
+}
+
+#spec{
+    color: #afb139;
+}
+
+#specl{
+    color: #afb139;
+    margin: 0 0px 0px 3px;
+    
+    display: inline;
+}
+
+#speca{
+    color: #afb139;
+    margin: 0 0px 0px 1px;
+    
+    display: inline;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+
+nav ul li a{
+    color: black;
+    font-size: 18px;  
+    padding: 7px 13px;
+}
+
+nav a:hover{
+    color: #afb139;
+    transition: all .15s ease-in-out;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* end of navbar */
+
+/* content */
+.content{
+    margin-top: 80px;
+}
+
+.headerpic{
+    display: flex;
+    justify-content: center;
+}
+
+#specs{
+    margin: 0 1vw;
+    color: #afb139;
+}
+
+.title{
+    padding-top: 3vw;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px #afb139;
+}
+
+.line {
+    background: linear-gradient(to right, black 0%, black 33%, #afb139 33%, #afb139 66%, black 66%, black 100%);
+    height: 3px; 
+    width: 35%; 
+    margin: 0 auto;
+    margin-bottom: 5vw;
+    box-shadow: 3px 8px 14px #fbff00;
+}
+
+.headerpic img{
+    height: 19.34vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+form{
+    background-color: #303030;
+    justify-content:center;
+    margin: 0 25vw;
+    border:none;
+    border-radius: 3vw;
+    padding: 1.9vw 4vw 2vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 1.3vw;
+    /* background-color: #FDFFE5; */
+    overflow: auto; 
+    
+}
+
+.form-field > input{
+    height: 5vw;
+    border: #303030;
+    border-radius: .6vw;
+    padding-inline: 1.3vw 0;
+    box-sizing: border-box;
+    font-size: 1.9vw;
+    background-color: #FDFFE5;
+    
+}
+
+.form-field > input:focus{
+    outline: none;
+    background-color: #FDFFE5;
+    vertical-align: top;
+}
+
+#iagree-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.8vw;
+    color: white;
+    column-gap: 1vw;
+    margin-top: 2vw;
+    text-align: justify;
+  }
+
+  #iagree-container > input {
+    height: 8vw;
+    width: 8vw;
+    border: none;
+  }
+
+.form-field > textarea:focus{
+    outline: none;
+    overflow-y: auto;
+}
+
+#message{
+    height: 10vw;
+    overflow-y: auto;
+    border: #303030;
+    border-radius: .6vw;
+    padding-inline: 1.3vw 0;
+    box-sizing: border-box;
+    font-size: 1.9vw;
+    background-color: #FDFFE5;
+
+    /* padding-bottom: 10vw; */
+    padding-top: 1vw;
+
+    /* vertical-align: top; */
+}
+
+#submit{
+    margin-top: 4vw;
+    background-color: #CBCE42;
+    height: 4.5vw;
+    width: 20vw;
+    font-weight: bold;
+    font-size: 2.5vw;
+    border: none;
+    border-radius: .7vw;
+    margin-bottom: 1vw;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #FDFFE5;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    /* justify-content: center; */
+    padding-bottom: 3vw;
+    margin-top: 9vw;
+}
+
+.footer{
+    height: auto;
+    width: 100%;
+    /* box-shadow: 0px 8px 16px 6px rgba(0,0,0,0.2); */
+    padding-bottom: 1vw;
+}
+
+.left{
+    text-align: left;
+    padding-left: 3vw;
+    padding-right: 14.5vw;
+}
+
+.head-left{
+    display: flex;
+    padding-bottom: 2vw;
+}
+
+.head-left img{
+    width: 4vw;
+    height: 4vw;
+}
+
+.desc{
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.desc-left{
+    font-size: 2.2vw;
+}
+
+.line-2{
+    border-left: 2px solid black; 
+    height: auto;
+    /* margin: 0 4vw 0 4.3vw; */
+}
+
+.right{
+    padding-left: 3vw;
+}
+.foll{
+    
+    font-size: 3vw;
+    font-weight: bold;
+    
+    padding-bottom: 1vw;
+}
+
+.logos img{
+    cursor: pointer;
+    margin-top: 1vw;
+    height: 3.5vw;
+    padding: 0 1vw;
+    margin-left: -1vw;
+}
+
+.cr{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+@media (max-width:900px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:800px){
+    .checkbtn{
+        display:block;
+    }
+
+    nav ul{
+        position:fixed;
+        width: 40%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+    }
+
+    nav a:hover{
+        color: #afb139;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    .right ul li{
+        padding: 0vw 0vw 0vw 2vw;
+    }
+
+    .line-2{
+        border-left: 1.3px solid black; 
+    }
+
+    .line {
+        background: linear-gradient(to right, black 0%, black 33%, #afb139 33%, #afb139 66%, black 66%, black 100%);
+        height: 2px; 
+        
+        box-shadow: 1px 3px 11px #fbff00;
+    }
+
+    form{
+        margin: 0 18vw;
+    }
+
+    .form-field > input{
+        height: 6vw;
+        padding-inline: 2vw 0;
+        font-size: 2.5vw;
+    }
+
+    #submit{
+        height: 6vw;
+        width: 30vw;
+        font-size: 3vw;
+    }
+
+    #message{
+        height: 14vw;
+        padding-inline: 2vw 0;
+        font-size: 2.5vw;
+    }
+
+    #iagree-container {
+        font-size: 2.1vw;
+        color: white;
+        column-gap: 1vw;
+        margin-top: 2vw;
+        text-align: justify;
+      }
+    
+}
